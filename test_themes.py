@@ -13,6 +13,10 @@ class TestThemes(unittest.TestCase):
         Duty_2 = "Duty 2 Initiate and facilitate knowledge sharing and technical collaboration with teams and individuals, with a focus on supporting development of team members."
         self.assertEqual(List_of_Duty[1], Duty_2)
     
+    def test_duty_12(self):
+        Duty_12 = "Duty 12 Look to automate any manual tasks that are repeated, often using APIs."
+        self.assertEqual(List_of_Duty[11], Duty_12)
+        
     
     
 
