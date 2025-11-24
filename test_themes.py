@@ -16,6 +16,10 @@ class TestThemes(unittest.TestCase):
     def test_duty_12(self):
         Duty_12 = "Duty 12 Look to automate any manual tasks that are repeated, often using APIs."
         self.assertEqual(List_of_Duty[11], Duty_12)
+    
+    def test_duty_13(self):
+        Duty_13 = "Duty 13 Accept ownership of changes; embody the DevOps culture of 'you build it, you run it', with a relentless focus on the user experience."
+        self.assertEqual(List_of_Duty[12], Duty_13)
         
     
     
