@@ -1,6 +1,13 @@
-from themes import x2
-def testIt():
-    assert len(x2)>10
-    assert True is True
+import unittest
+from themes import List_of_Duty
 
-testIt()
+class TestThemes(unittest.TestCase):
+    def test_duties_count(self):
+        self.assertEqual(len(List_of_Duty), 13)
+    
+
+
+
+
+if __name__ == "__main__":
+    unittest.main()
