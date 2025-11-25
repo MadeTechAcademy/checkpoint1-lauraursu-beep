@@ -11,8 +11,10 @@ List_of_Duty = [
     "Duty 10 Implement a good coverage of monitoring (metrics, logs), ensuring that alerts are visible, tuneable and actionable. ", 
     "Duty 11 Keep up with cutting edge by committing to continual training and development - utilise web resources for self-learning; horizon scanning; active membership of professional bodies such as Meetup Groups; subscribe to relevant publications.",
     "Duty 12 Look to automate any manual tasks that are repeated, often using APIs.",
-    "Duty 13 Accept ownership of changes; embody the DevOps culture of 'you build it, you run it', with a relentless focus on the user experience."]
-   
+    "Duty 13 Accept ownership of changes; embody the DevOps culture of 'you build it, you run it', with a relentless focus on the user experience.",
+    ]
+
+# Storing duties in a text file
 store_duties = open("duties.txt","w")
 
 for Duty in List_of_Duty:
@@ -20,17 +22,17 @@ for Duty in List_of_Duty:
 
 store_duties.close()
 
-# #list of duties
+#list of duties
 
-# def go():
-#     for Duty in List_of_Duty:
-#         print("{0}\n".format(Duty))
+def go():
+    for Duty in List_of_Duty:
+        print("{0}\n".format(Duty))
 
-# if __name__=="__main__":
-#     x = input("""
-#     Welcome to apprentice themes!\n
-#     Press (1) to list all the duties\n
-#     Enter your choice:
-#     """)
-#     if x == '1':
-#         go()
+if __name__=="__main__":
+    x = input("""
+    Welcome to apprentice themes!\n
+    Press (1) to list all the duties\n
+    Enter your choice:
+    """)
+    if x == '1':
+        go()
