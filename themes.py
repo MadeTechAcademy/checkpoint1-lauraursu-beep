@@ -13,18 +13,24 @@ List_of_Duty = [
     "Duty 12 Look to automate any manual tasks that are repeated, often using APIs.",
     "Duty 13 Accept ownership of changes; embody the DevOps culture of 'you build it, you run it', with a relentless focus on the user experience."]
    
+store_duties = open("duties.txt","w")
 
-#list of duties
+for Duty in List_of_Duty:
+    store_duties.write(f"/{Duty}\n")
 
-def go():
-    for Duty in List_of_Duty:
-        print("{0}\n".format(Duty))
+store_duties.close()
 
-if __name__=="__main__":
-    x = input("""
-    Welcome to apprentice themes!\n
-    Press (1) to list all the duties\n
-    Enter your choice:
-    """)
-    if x == '1':
-        go()
+# #list of duties
+
+# def go():
+#     for Duty in List_of_Duty:
+#         print("{0}\n".format(Duty))
+
+# if __name__=="__main__":
+#     x = input("""
+#     Welcome to apprentice themes!\n
+#     Press (1) to list all the duties\n
+#     Enter your choice:
+#     """)
+#     if x == '1':
+#         go()
